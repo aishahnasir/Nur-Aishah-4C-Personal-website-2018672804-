@@ -1,0 +1,93 @@
+<html>
+<head>
+<title></title>
+</head>
+<body>
+
+<body background = "images/background/wall1.png" witdh= "100%" length="100%">
+
+<br>
+<br>
+<br>
+<h1 align="center" >
+<font face="Comic sans MS" background color="#7b588d">YOU ARE NOW AT MY WEBSITE</font>
+</h1>
+<h1 align="center">
+<font face="Lucida Console" background color="#cc0066">WELCOME!</font>
+</h1>
+<br> 
+<br>
+<br>
+
+
+<script>
+function startTime() {
+  var today = new Date();
+  var h = today.getHours();
+  var m = today.getMinutes();
+  var s = today.getSeconds();
+  m = checkTime(m);
+  s = checkTime(s);
+  document.getElementById('txt').innerHTML =
+  h + ":" + m + ":" + s;
+  var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+  return i;
+}
+</script>
+</head>
+
+<body onload="startTime()">
+
+<div id="txt" align="center"></div>
+
+
+
+
+
+<h5 align="center">
+<font face=""Lucida Console">click any that you want to see</font>
+</h5>
+
+
+
+<b>
+<p align="center"></p><p align="center">
+<a href="biodata.html"><img src="images/index/sleep.gif" width="20%" heigth="45%" align="center"></a>
+<font face="Lucida Sans Unicode">BIODATA</a>
+</b>
+
+<b>
+<p align="center"></p><p align="center">
+<font face="Lucida Sans Unicode" font color="red">HEAR MY EXPERIENCE</a>
+<a href="experience.html"><img src="images/index/experience.gif" width="18%" heigth="43%" align="center"></a>
+</b>
+
+<b>
+<p align="center"></p><p align="center">
+<a href="education.html"><img src="images/index/education.gif" width="20%" heigth="45%" align="center"></a>
+<font face="Lucida Sans Unicode" font color="green">MY EDUCATION</a>
+</b>
+
+<b>
+<p align="center"></p><p align="center">
+<font face="Lucida Sans Unicode" font color="#dc2951">KNOW MY FAMILY</a>
+<a href="family.html"><img src="images/index/family.gif" width="20%" heigth="45%" align="center"></a>
+</b>
+
+<b>
+<p align="center"></p><p align="center">
+<a href="gallery.html"><img src="images/index/gallery.gif" width="25%" heigth="50%" align="center"></a>
+<font face="Lucida Sans Unicode" font color="purple">SEE MY GALLERY</a>
+</b>
+
+<b>
+<p align="center"></p><p align="center">
+<font face="Lucida Sans Unicode" font color="#3e0012">EXPLORE MY BRAIN</a>
+<a href="brain.html"><img src="images/index/brain.gif"  width="15%" heigth="20%" align="center"></a>
+</b>
+
+</body>
+</html>
